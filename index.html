@@ -22,6 +22,18 @@
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">Assault Rolls</div>
       </div>
+	  <p id="controls">
+	  <br/><br/>
+	  Controls:
+	  <ul>
+		<li>Move Forward: Up Arrow</li>
+		<li>Move Backward: Down Arrow</li>
+		<li>Turn Right: Right Arrow</li>
+		<li>Turn Left: Left Arrow</li>
+		<li>Shoot: Left CTRL</li>
+		<li>Brake: Spacebar</li>
+	  </ul>
+	  </p>
     </div>
     <script>
       var container = document.querySelector("#unity-container");
@@ -58,9 +70,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/AssaultRolls.loader.js";
       var config = {
-        dataUrl: buildUrl + "/AssaultRolls.data.gz",
-        frameworkUrl: buildUrl + "/AssaultRolls.framework.js.gz",
-        codeUrl: buildUrl + "/AssaultRolls.wasm.gz",
+        dataUrl: buildUrl + "/AssaultRolls.data",
+        frameworkUrl: buildUrl + "/AssaultRolls.framework.js",
+        codeUrl: buildUrl + "/AssaultRolls.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Robbie",
         productName: "Assault Rolls",
